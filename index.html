@@ -2,166 +2,44 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <title>Loja Divercidade</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIVERCIDADE - Produtos que resolvem</title>
     <style>
-        body {
-            font-family: sans-serif;
-            background: #f4f4f4;
-            margin: 0;
-            padding: 2rem;
-        }
-        header {
-            background: #00a896;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-            border-radius: 12px;
-        }
-        h1 {
-            margin: 0;
-        }
-        section {
-            margin-top: 2rem;
-        }
-        .produto {
-            background: white;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            border-radius: 12px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .produto img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
-        footer {
-            margin-top: 2rem;
-            text-align: center;
-            font-size: 0.9rem;
-            color: #555;
-        }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff; color: #333; }
+        header { background: #ff6600; color: white; padding: 20px; text-align: center; position: sticky; top: 0; }
+        nav a { color: white; margin: 0 10px; text-decoration: none; }
+        section { padding: 20px; }
+        .contact-form { display: flex; flex-direction: column; gap: 10px; max-width: 500px; margin: auto; }
+        .contact-form input, .contact-form textarea { padding: 10px; font-size: 1em; border: 1px solid #ccc; border-radius: 5px; }
+        .contact-form button { background: #ff6600; color: white; border: none; padding: 10px; cursor: pointer; border-radius: 5px; }
+        footer { background: #000; color: white; text-align: center; padding: 10px; margin-top: 40px; }
     </style>
-    body {
-  background-color: #fffaf5;
-  font-family: 'Segoe UI', sans-serif;
-  color: #111;
-}
-
-header {
-  background-color: #ff7a00;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-h1, h2, h3 {
-  color: #ff7a00;
-}
-
-a, button {
-  background-color: #111;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-a:hover, button:hover {
-  background-color: #ff7a00;
-  color: #111;
-}
-
-footer {
-  background-color: #111;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-}
-
 </head>
 <body>
     <header>
-        <h1>Loja DIVERCIDADE</h1>
-        <p>Produtos que resolvem!</p>
+        <h1>DIVERCIDADE</h1>
+        <p>Produtos que resolvem</p>
+        <nav>
+            <a href="#produtos">Produtos</a>
+            <a href="#revendedores">Revendedores</a>
+            <a href="#contato">Contato</a>
+        </nav>
     </header>
 
-    <section>
-        <h2>Missão da loja</h2>
-        <p>Oferecer produtos úteis que resolvam pequenos problemas no dia a dia.</p>
-    </section>
-
-    <section>
-        <h2>Produtos em destaque</h2>
-        <div class="produto">
-            <h3>Filtros anti-entupimento</h3>
-            <img src=https://raw.githubusercontent.com/rangel1001/divercidade-site./refs/heads/main/Filtro%20Anti%20-%20Entupimento.avif>
-            <p>Evite entupimentos na cozinha e casa de banho com esse acessório prático.</p>
-            <!-- Botão de WhatsApp -->
-  <a href="https://wa.me/244942853626?text=Olá!%20Tenho%20interesse%20nos%20Filtros%20anti-entupimento" target="_blank">
-    <button style="background-color: #25D366; color: white; padding: 10px 15px; border: none; border-radius: 8px; cursor: pointer;">
-      Comprar via WhatsApp
-    </button>
-  </a>
-        </div>
-        <div class="produto">
-            <h3>Absorventes Anti-suor</h3>
-            <img src=https://github.com/rangel1001/divercidade-site./blob/main/Absorventes%20Anti-Suor.jpg?raw=true>
-            <p>Evite manchas de suor nas roupas com conforto e discrição.</p>
-            <!-- Botão de WhatsApp -->
-  <a href="https://wa.me/244942853626?text=Olá!%20Tenho%20interesse%20nos%20Absorventes%20anti-suor" target="_blank">
-    <button style="background-color: #25D366; color: white; padding: 10px 15px; border: none; border-radius: 8px; cursor: pointer;">
-      Comprar via WhatsApp
-    </button>
-  </a>
-        </div>
-        <div class="produto">
-            <h3>Pacotinhos de lubrificantes</h3>
-            <img src=https://github.com/rangel1001/divercidade-site./blob/main/Pacotinhos%20de%20lubrificante.png?raw=true>
-            <p>Praticidade e descrição em pacotes de lubrificante com aromas diversos.</p>
-               <!-- Botão de WhatsApp -->
-  <a href="https://wa.me/244942853626?text=Olá!%20Tenho%20interesse%20nos%20Pacotinhos%20De Lubrificantes" target="_blank">
-    <button style="background-color: #25D366; color: white; padding: 10px 15px; border: none; border-radius: 8px; cursor: pointer;">
-      Comprar via WhatsApp
-    </button>
-  </a>
-        </div>
-    </section>
-
-    <section>
-        <h2>Mensagem para os revendedores</h2>
-        <p><strong>AQUI VOCÊ FAZ KUMBU COM O TEU POUCO KUMBU</strong></p>
+    <section id="contato">
+        <h2>Fale Connosco</h2>
+        <p>Tem alguma dúvida ou quer saber mais? Envie uma mensagem!</p>
+        <form action="https://formsubmit.co/ldadivercidade@gmail.com" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <textarea name="message" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
     </section>
 
     <footer>
-        &copy; 2025 Loja Divercidade. Todos os direitos reservados.
+        &copy; 2025 DIVERCIDADE - Todos os direitos reservados.
     </footer>
-   <!-- Botões de contato -->
-<div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
-  <a href="https://wa.me/244942853626?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20da%20Loja%20DIVERCIDADE!" target="_blank">
-    <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" alt="WhatsApp" style="width: 50px; margin-right: 10px;">
-  </a>
-  <a href="https://www.instagram.com/divercidade2025" target="_blank">
-    <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram" style="width: 50px;">
-  </a>
-</div>
-<h2>📩 Fale Connosco</h2>
-<form action="https://formspree.io/f/xrbpoqpj" method="POST">
-  <label for="nome">Seu Nome:</label><br>
-  <input type="text" name="nome" required><br><br>
-
-  <label for="email">Seu Email:</label><br>
-  <input type="email" name="email" required><br><br>
-
-  <label for="mensagem">Mensagem:</label><br>
-  <textarea name="mensagem" rows="4" required></textarea><br><br>
-
-  <button type="submit">Enviar Mensagem</button>
-</form>
-
-
 </body>
 </html>
